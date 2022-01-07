@@ -31,7 +31,16 @@ print ("My name is %s and weight is %d kg!" % ('Zara', 21) )
 # 统计某个元素在列表中出现的次数
 print (a.count("l"))
 
+# r 表示后面的都是非转义字符串
 print (r"\n\tRr")
 
 # 引号前小写的"u"表示这里创建的是一个 Unicode 字符串。
-print u'\u6b22\u8fce\u8bbf\u95ee\u83dc\u9e1f\u6559\u7a0b\uff01'
+print u'\u6b22\u8fce\u8bbf\u95ee\u83dc\u9e1f\u6559\u7a0b\uff01' # 欢迎访问菜鸟教程！
+
+
+# find、rfind 分别获取 第一次、最后一次字符出现的位置；index 方法也可以获取索引
+str = "https://cdn.jsdelivr.net/gh/DogerRain/image@main/img-202109/6555006-1f81e81466729c6b.png"
+str = str[str.find("//") + len("//"):]
+url = "cdn.jsdelivr.net/gh/DogerRain/image@main/img-202109/6555006-1f81e81466729c6b.png"
+print url.index("/")
+print str.rfind("/")
