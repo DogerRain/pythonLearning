@@ -20,15 +20,26 @@ while flag:
 
     print "正在进行第" + str(i) + "次爬虫，url=" + url
 
+    # 返回 buffer对象
     response = requests.get(url, headers)
 
+    # json对象
     responseJson = json.dumps(response.json(), ensure_ascii=False)
 
+    #入参为字符串,返回字典格式对象
     s = json.loads(responseJson)
 
-    print s.keys()
+    jsonObject = json.dumps(s)
 
-    print responseJson
+    print jsonObject
+
+    # print responseJson
+    #
+    # print s
+
+    # print s.keys()
+
+    # print responseJson
 
     pageFrom += pageSize;
 
