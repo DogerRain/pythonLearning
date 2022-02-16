@@ -5,7 +5,7 @@ class listTest():
 
     def __init__(self, name="醋酸菌"):
         print("来了，",name,"老弟")
-        print "来了老弟"+name
+        print("来了老弟"+name)   # python3需要括号，python2不需要
 
     def listFun(self):
         mylist = ['Google', 'Yahoo', 'Baidu']
