@@ -1,5 +1,10 @@
-#!/user/bin/python
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python
+# -*- coding: utf-9 -*-
+# @Time    : 2021/2/17 0:03
+# @Author  : 醋酸菌HaC
+# @Site    : https://rain.baimuxym.cn
+# @File    : 列表.py
+
 list1 = ['physics', 'chemistry', 1997, 2000]
 list2 = [1, 2, 3, 4, 5, 6, 7]
 
@@ -49,3 +54,14 @@ list2.sort(reverse=True)  # 降序
 
 school = [[1, 2], [3, 4, 5], [6]]
 
+
+
+
+# 使用 枚举拿到列表的k、v
+
+mylist = ["a","b",0,2,3]
+
+
+# 通过枚举拿到
+for index,value in enumerate(mylist):
+    print("下标:%s，值:%s"%(index,value))
