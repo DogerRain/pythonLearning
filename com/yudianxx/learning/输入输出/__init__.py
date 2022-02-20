@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 while True:
     username =(input('请输入用户名: '))
-    print username
+    print(username)
     if username == "quit" or username == "exit" :
         # break;
         exit()
