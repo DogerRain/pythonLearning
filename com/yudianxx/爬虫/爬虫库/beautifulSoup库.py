@@ -5,3 +5,9 @@
 # @Site    : https://rain.baimuxym.cn
 # @File    : 豆瓣爬虫.py
 
+
+from bs4 import BeautifulSoup ;
+
+soup = BeautifulSoup(open('index.html'))  #使用本地文件创建对象
+
+print(soup)
