@@ -8,6 +8,6 @@
 
 from bs4 import BeautifulSoup ;
 
-soup = BeautifulSoup(open('index.html'))  #使用本地文件创建对象
+soup = BeautifulSoup(open('index.html'),"html")  #使用本地文件创建对象
 
 print(soup)
